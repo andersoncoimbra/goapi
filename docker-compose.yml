@@ -1,0 +1,47 @@
+version: '3'
+services:
+  api:
+    tty: true
+    build:
+      context: .dockerfiles
+      dockerfile: DockerfileGo
+    volumes:
+      - ./api:/app
+    command: go run main.go
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
+    networks:
+      - api
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=api
+      - MYSQL_USER=api
+      - MYSQL_PASSWORD=password
+    ports:
+      - 3306:3306
+    volumes:
+      - ./seeds:/tmp/database
+      - ./data:/var/lib/mysql
+    command: --init-file /tmp/database/init.sql
+    networks:
+      - api
+  front:
+    tty: true
+    build:
+      context: .dockerfiles
+      dockerfile: DockerfileFront
+    command: npm run dev
+    volumes:
+      - ./front:/app
+    ports:
+      - 3000:3000
+    networks:
+      - api
+networks:
+  api:
+    driver: bridge
