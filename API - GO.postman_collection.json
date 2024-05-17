@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "722a4962-89ef-4fba-8b3b-d65d63c6d106",
+		"name": "API - GO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2103973"
+	},
+	"item": [
+		{
+			"name": "Produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/produtos",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Produtos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/produtos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 May 2024 16:17:29 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1199"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Produto 1\",\n        \"price\": 10\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Produto 2\",\n        \"price\": 20\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Produto 3\",\n        \"price\": 30\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Produto 4\",\n        \"price\": 40\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Produto 5\",\n        \"price\": 50\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Produto 6\",\n        \"price\": 60\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Produto 7\",\n        \"price\": 70\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Produto 8\",\n        \"price\": 80\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Produto 9\",\n        \"price\": 90\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Produto 10\",\n        \"price\": 100\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Produto 1\",\n        \"price\": 10\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Produto 2\",\n        \"price\": 20\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Produto 3\",\n        \"price\": 30\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Produto 4\",\n        \"price\": 40\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Produto 5\",\n        \"price\": 50\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Produto 6\",\n        \"price\": 60\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Produto 7\",\n        \"price\": 70\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Produto 8\",\n        \"price\": 80\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Produto 9\",\n        \"price\": 90\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Produto 10\",\n        \"price\": 100\n    },\n    {\n        \"id\": 21,\n        \"name\": \"Produto 1\",\n        \"price\": 10\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Produto 2\",\n        \"price\": 20\n    },\n    {\n        \"id\": 23,\n        \"name\": \"Produto 3\",\n        \"price\": 30\n    },\n    {\n        \"id\": 24,\n        \"name\": \"Produto 4\",\n        \"price\": 40\n    },\n    {\n        \"id\": 25,\n        \"name\": \"Produto 5\",\n        \"price\": 50\n    },\n    {\n        \"id\": 26,\n        \"name\": \"Produto 6\",\n        \"price\": 60\n    },\n    {\n        \"id\": 27,\n        \"name\": \"Produto 7\",\n        \"price\": 70\n    },\n    {\n        \"id\": 28,\n        \"name\": \"Produto 8\",\n        \"price\": 80\n    },\n    {\n        \"id\": 29,\n        \"name\": \"Produto 9\",\n        \"price\": 90\n    },\n    {\n        \"id\": 30,\n        \"name\": \"Produto 10\",\n        \"price\": 100\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Produto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/produtos/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"produtos",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/produtos/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"produtos",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 May 2024 16:28:11 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"Produto 3\",\n    \"price\": 30\n}"
+				}
+			]
+		},
+		{
+			"name": "Atualiza Produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Produto Atualizado 5\",\r\n    \"price\": 12.60\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/produtos/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"produtos",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Atualizar Produto",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Produto Atualizado 5\",\r\n    \"price\": 12.60\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/produtos/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"produtos",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 May 2024 17:54:15 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"Produto Atualizado 5\",\n    \"price\": 12.6\n}"
+				}
+			]
+		},
+		{
+			"name": "Novo Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"name\" : \"Prod Test 1\",\r\n \"price\": 12.26\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/produtos",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"produtos"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Novo Produto",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\" : \"Prod Test 1\",\r\n \"price\": 12.26\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/produtos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 May 2024 16:52:46 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 31,\n    \"name\": \"Prod Test 1\",\n    \"price\": 12.26\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove Produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/produtos/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"produtos",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Remove Produto",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/produtos/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"produtos",
+								"3"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 17 May 2024 18:09:22 GMT"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
