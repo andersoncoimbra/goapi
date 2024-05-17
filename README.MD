@@ -34,7 +34,7 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 5. Para exibir o front feito em VUE.js acesse [http://localhost:3000](http://localhost:3000).
 
-6. Para acessar a documentação da API acesse [https://documenter.getpostman.com/view/2103973/2sA3JT3eBo](PostMan).
+6. Para acessar a documentação da API acesse [POSTMAN](https://documenter.getpostman.com/view/2103973/2sA3JT3eBo).
 
 ## Contribuição
 
